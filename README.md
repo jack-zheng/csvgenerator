@@ -23,8 +23,9 @@ output:
 使用 csv lib 完成工作 
 
 update OCT-25 ------------------  
-接口变动， 提供了一个生成默认文件的方法:  
+接口变动: 提供了一个生成默认文件的方法  
 generate_general_csv(sample_file, increment_count)  
 
-参数： sample_file, 你想要 copy 的文件，确保该文件再当前文件夹下  
-      increment_count, 你想要生成的数据的条数
+参数:  
+sample_file, 你想要 copy 的文件，确保该文件再当前文件夹下  
+increment_count, 你想要生成的数据的条数
