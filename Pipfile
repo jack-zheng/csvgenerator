@@ -5,8 +5,9 @@ name = "pypi"
 
 [packages]
 ipython = "==6.5.0"
+wxpython = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.7"
+python_version = "3.*"
