@@ -1,5 +1,11 @@
 import csv
 
+def get_file_header(file_path):
+    header = []
+    with open(file_path, 'r', newline='') as file:
+        reader = csv.reader(file)
+        header = list(reader)[0]
+    return header
 
 def generate_row(suffix, position_list, row):
     for index, val in enumerate(row):
