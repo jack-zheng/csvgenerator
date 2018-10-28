@@ -1,4 +1,10 @@
 # csvgenerator
+### How To Use It
+1. clone this project to your local machine
+2. make sure you have python3 install in your machine
+3. cd to project folder and run command: python ui.py
+
+
 ### Aim
 Phase I: python script to generate csv file  
 Phase II: desktop app(UI) to generate csv file
@@ -45,4 +51,11 @@ update OCT-28 ------------------
 妈耶～ 比想象中的简单好多， 20分钟就整合完了, 接下来优化一下 style  
 因为引用了 ttk 所以有风格不一致，都用基础包， 问题解决  
 查看一下怎么打包发布  
-之后考虑一下加个自定义输出文件name？  
+之后考虑一下加个自定义输出文件name？(放弃..)  
+打包失败， 点击icon 之后error, 没什么兴趣修复了，终端运行就完了  
+想了下要不要用 app script 实现功能， 但是这样的话要求运行的机子上有安装关联的包， dependency 太多了， 不好  
+
+#### 小结
+总的来说， 这个东西不是很难， 但是总感觉不是很顺畅， 以后类似的任务用web 形式可能会更方便一点  
+当然如果是完全不懂的， app 会更友好一点  
+项目暂时就这样吧， 告一段落
