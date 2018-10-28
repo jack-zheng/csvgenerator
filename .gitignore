@@ -1,5 +1,5 @@
-# ignore plt-user project
-PLT-User/
+# ignore out put file
+**/out.csv 
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
