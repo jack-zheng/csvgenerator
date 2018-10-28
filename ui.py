@@ -85,9 +85,14 @@ def main():
         #print('file: %s, count: %s, increment column: %s' %(file_path, user_count, ))
         print('file: %s, count: %s' %(file_path.get(), user_count.get()))
         print('map: %s' % len(status_map))
-        
+
+        target_col = []
         for sub in status_map:
             print('key: %s, value: %s' %(sub, status_map[sub].get()))
+            if status_map[sub].get() == 1:
+                target_col.append(sub)
+
+        generate_general_csv(file_path.get(), user_count.get(), target_col)
 
 
     submitBtn = Button(submit_frame, text="Submit", command=process_submit)

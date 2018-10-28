@@ -36,7 +36,7 @@ def generate_file(position_list, headers, template_row, increment_count):
             writer.writerow(bak_row)
             index = index + 1
 
-def generate_general_csv(sample_file, increment_count):
+def generate_general_csv(sample_file, increment_count, increment_col=['USERID', 'USERNAME']):
     '''
     this method will generate the common format user file, setting as:
     1. headers contains the first two lines of csv file
@@ -59,9 +59,8 @@ def generate_general_csv(sample_file, increment_count):
         sample_row = content[2]
 
     position_list = []
-    default_increment_col = ['USERID', 'USERNAME']
     for index, val in enumerate(header01):
-        if val in default_increment_col:
+        if val in increment_col:
             print('position index: %s' % index)
             position_list.append(index)
 
